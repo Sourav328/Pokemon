@@ -39,7 +39,7 @@ void Tracey()
     cout << "Tracey: Cute." << endl;
     cout << "Tracey: But the real battles require more than just basic programming." << endl;
     cout << "Tracey: Today, you're going to clean up some mess in your code." << endl;
-    cout << "Tracey: Let's see if you can level up your enums... if you are ready, of course." << endl;
+    cout << "Tracey: Let's see if you can level up your enums... if you’r ready, of course." << endl;
 }
 
 
@@ -81,7 +81,6 @@ int main()
         cout << "Professor Oak: You chose Squirtle! A cool and steady choice.\n";
         break;
     default:
-       
         chosen_pokemon = PokemonChoice::Charmander;
         cout << "                        " << endl;
         cout << "Professor Oak: Hmm, that doesn't seem right. Let's go with Charmander by default!\n";
