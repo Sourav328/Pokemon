@@ -63,7 +63,7 @@ public:
     string Name;
     PokemonType Type;
     int Health;
-    Pokemon() : Name("Unknown"), Type(PokemonType::ELECTRIC), Health(100)
+    Pokemon() : Name ("Unknown"), Type(PokemonType::ELECTRIC), Health(100)
     {
 
     }
@@ -87,16 +87,16 @@ public:
         switch ((PokemonChoice)choice)
         {
         case PokemonChoice::Charmander:
-            ChosenPokemon = Pokemon("Charmander", PokemonType::FIRE, 100);
+            ChosenPokemon = Pokemon(" Charmander ", PokemonType::FIRE, 100);
             break;
         case PokemonChoice::Bulbasaur:
-            ChosenPokemon = Pokemon("Bulbasaur", PokemonType::GRASS, 100);
+            ChosenPokemon = Pokemon(" Bulbasaur ", PokemonType::GRASS, 100);
             break;
         case PokemonChoice::Squirtle:
-            ChosenPokemon = Pokemon("Squirtle", PokemonType::WATER, 100);
+            ChosenPokemon = Pokemon(" Squirtle ", PokemonType::WATER, 100);
             break;
         }
-        cout << "Player" << Name << "chose" << ChosenPokemon.Name << "!\n";
+        cout << " Player " << Name << " chose " << ChosenPokemon.Name << "!\n";
     }
 };
 class ProfessorOak
@@ -111,9 +111,9 @@ public:
     }
     void offerPokemonChoices(Player& player)
     {
-        cout << Name << ": First, tell me, what’s your name?\n";
+        cout << Name << ": First, tell me, what's your name?\n";
         getline(cin, player.Name);
-        cout << Name << ": Ah, " << player.Name << "! What a fantastic name!\n";
+        cout << Name << ": Ah, " << player.Name << " ! What a fantastic name! \n";
         cout << Name << ": You must be eager to start your adventure. But first, you’ll need a Pokemon of your own!\n";
         cout << Name << ": I have three Pokemon here with me. They’re all quite feisty!\n";
         cout << Name << ": Choose wisely...\n";
