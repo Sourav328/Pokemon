@@ -10,6 +10,7 @@ enum class PokemonChoice {
     InvalidChoice
 };
 
+
 enum class PokemonType {
     FIRE,
     GRASS,
@@ -24,28 +25,27 @@ public:
     PokemonType Type;
     int Health;
 
-    
-    Pokemon() : Name("Unknown"), Type(PokemonType::ELECTRIC), Health(100) {}
-
-    
     Pokemon(string P_Name, PokemonType P_Type, int P_Health)
-        : Name(P_Name), Type(P_Type), Health(P_Health) {}
+        : Name(P_Name), Type(P_Type), Health(P_Health)
+    {
+    }
 
-    
-    void Attack() {
+
+    void Attack()
+    {
         cout << Name << " attacks with a powerful move!\n";
     }
 };
 
-
+// Player class definition
 class Player {
 public:
     string Name;
-    Pokemon ChosenPokemon;
+    Pokemon ChosenPokemon{ "", PokemonType::FIRE, 0 }; 
 
     
     void ChoosePokemon(int choice) {
-        switch ((PokemonChoice)choice) {
+        switch (static_cast<PokemonChoice>(choice)) {
         case PokemonChoice::Charmander:
             ChosenPokemon = Pokemon("Charmander", PokemonType::FIRE, 100);
             break;
@@ -56,7 +56,7 @@ public:
             ChosenPokemon = Pokemon("Squirtle", PokemonType::WATER, 100);
             break;
         default:
-            ChosenPokemon = Pokemon("Pikachu", PokemonType::ELECTRIC, 100); 
+            ChosenPokemon = Pokemon("Pikachu", PokemonType::ELECTRIC, 100);  
             break;
         }
         cout << "Player " << Name << " chose " << ChosenPokemon.Name << "!\n";
@@ -75,10 +75,10 @@ public:
         cout << Name << ": But enough about me. Let's talk about you!\n";
     }
 
-    
+  
     void offerPokemonChoices(Player& player) {
         cout << Name << ": First, tell me, what's your name?\n";
-        getline(cin, player.Name);
+        getline(cin, player.Name);  
         cout << Name << ": Ah, " << player.Name << "! What a fantastic name!\n";
         cout << Name << ": You must be eager to start your adventure. But first, you’ll need a Pokemon of your own!\n";
         cout << Name << ": I have three Pokemon here with me. They’re all quite feisty!\n";
@@ -95,12 +95,12 @@ public:
     }
 };
 
-int main() {
+int main()
+{
     
     ProfessorOak professor;
     Player player;
 
-    
     professor.Name = "Professor Oak";
 
     
