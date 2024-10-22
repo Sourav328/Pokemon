@@ -1,12 +1,5 @@
 <<<<<<< Updated upstream
 #include <iostream>
-
-int main()
-{
-   
-}
-=======
-﻿#include <iostream>
 #include<string>
 using namespace std;
 
