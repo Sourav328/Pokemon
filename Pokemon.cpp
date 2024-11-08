@@ -1,6 +1,7 @@
 ﻿#include <iostream>
 #include <limits> // Include this header to use numeric_limits
 #include <string>
+
 using namespace std;
 
 // Function to clear the console
@@ -283,7 +284,8 @@ void gameLoop(Player& player) {
     cout << "Goodbye, " << player.name << "! Thanks for playing!\n";
 }
 
-int main() {
+int main() 
+{
     // Create Pokemon and Player objects for the game
     Pokemon charmander("Charmander", PokemonType::FIRE,
         100); // Using parameterized constructor
@@ -303,4 +305,4 @@ int main() {
     gameLoop(player);
 
     return 0;
-}
+#include "header.hpp"
