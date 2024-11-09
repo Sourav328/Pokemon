@@ -1,94 +1,12 @@
-﻿#include "PokemonChoice.hpp"
-#include "PokemonType.hpp"
+﻿#include "Player.hpp"
 #include "Utility.hpp"
 #include <iostream>
-#include <limits> // Include this header to use numeric_limits
+#include <limits> 
 #include <string>
 using namespace std;
 
 
 
-// Pokemon class definition
-class Pokemon 
-{
-public:
-    string name;
-    PokemonType type;
-    int health;
-
-    // Default constructor
-    Pokemon() {
-        name = "Unknown";
-        type = PokemonType::NORMAL;
-        health = 50;
-    }
-
-    // Parameterized constructor
-    Pokemon(std::string p_name, PokemonType p_type, int p_health) 
-    {
-        name = p_name;
-        type = p_type;
-        health = p_health;
-    }
-
-    // Copy constructor
-    Pokemon(const Pokemon& other) 
-    {
-        name = other.name;
-        type = other.type;
-        health = other.health;
-    }
-
-    // Destructor
-    ~Pokemon() 
-    {
-        // Destructor message removed
-    }
-
-    void attack() { std::cout << name << " attacks with a powerful move!\n"; }
-};
-
-// Player class definition
-class Player {
-public:
-    string name;
-    Pokemon chosenPokemon;
-
-    // Default constructor
-    Player() 
-    {
-        name = "Trainer";
-        chosenPokemon = Pokemon(); // Using the default Pokemon constructor
-    }
-
-    // Parameterized constructor
-    Player(std::string p_name, Pokemon p_chosenPokemon) 
-    {
-        name = p_name;
-        chosenPokemon = p_chosenPokemon;
-    }
-
-    void choosePokemon(int choice) 
-    {
-        switch ((PokemonChoice)choice) 
-        {
-        case PokemonChoice::CHARMANDER:
-            chosenPokemon = Pokemon("Charmander", PokemonType::FIRE, 100);
-            break;
-        case PokemonChoice::BULBASAUR:
-            chosenPokemon = Pokemon("Bulbasaur", PokemonType::GRASS, 100);
-            break;
-        case PokemonChoice::SQUIRTLE:
-            chosenPokemon = Pokemon("Squirtle", PokemonType::WATER, 100);
-            break;
-        default:
-            chosenPokemon = Pokemon("Pikachu", PokemonType::ELECTRIC, 100);
-            break;
-        }
-        cout << "Player " << name << " chose " << chosenPokemon.name << "!\n";
-        Utility::waitForEnter(); // Wait for user to press Enter before proceeding
-    }
-};
 
 // ProfessorOak class definition
 class ProfessorOak 
@@ -270,20 +188,15 @@ void gameLoop(Player& player) {
 int main()
 {
     // Create Pokemon and Player objects for the game
-    Pokemon charmander("Charmander", PokemonType::FIRE,
-        100); // Using parameterized constructor
-
+    Pokemon charmander("Charmander", PokemonType::FIRE,100); 
     // Continue with the main flow of the game
     ProfessorOak professor("Professor Oak");
     Player player("Ash", charmander);
-
     // Greet the player and offer Pokemon choices
     professor.greetPlayer(player);
     professor.offerPokemonChoices(player);
-
     // Explain the main quest
     professor.explainMainQuest(player);
-
     // Start the main game loop
     gameLoop(player);
 
