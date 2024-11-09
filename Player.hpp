@@ -1,16 +1,51 @@
 #include <string>
-#include "PokemonType.hpp"
-#include "PokemonChoice.hpp"
 #include "Utility.hpp"
+#include "Pokemon.hpp"
 using namespace std;
 
-class Player {
+class Player
+{
 public:
     string name;
     Pokemon chosenPokemon;
 
-    Player(); // Default constructor
     Player(string p_name, Pokemon p_chosenPokemon); // Parameterized constructor
 
     void choosePokemon(int choice); // Method to choose a Pokemon
+   
+
+    // Default constructor
+    Player()
+    {
+        name = "Trainer";
+        chosenPokemon = Pokemon(); // Using the default Pokemon constructor
+    }
+
+    // Parameterized constructor
+    Player(std::string p_name, Pokemon p_chosenPokemon)
+    {
+        name = p_name;
+        chosenPokemon = p_chosenPokemon;
+    }
+
+    void choosePokemon(int choice)
+    {
+        switch ((PokemonChoice)choice)
+        {
+        case PokemonChoice::CHARMANDER:
+            chosenPokemon = Pokemon("Charmander", PokemonType::FIRE, 100);
+            break;
+        case PokemonChoice::BULBASAUR:
+            chosenPokemon = Pokemon("Bulbasaur", PokemonType::GRASS, 100);
+            break;
+        case PokemonChoice::SQUIRTLE:
+            chosenPokemon = Pokemon("Squirtle", PokemonType::WATER, 100);
+            break;
+        default:
+            chosenPokemon = Pokemon("Pikachu", PokemonType::ELECTRIC, 100);
+            break;
+        }
+        cout << "Player " << name << " chose " << chosenPokemon.name << "!\n";
+        Utility::waitForEnter(); // Wait for user to press Enter before proceeding
+    }
 };
