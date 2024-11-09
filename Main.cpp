@@ -139,7 +139,9 @@ void gameLoop(Player& player) {
         cout << "Enter your choice: ";
         cin >> choice;
 
-        // Clear the newline character left in the buffer after cin >> choice
+        Utility::clearInputBuffer();
+        
+        //Clear the newline character left in the buffer after cin >> choice
         cin.ignore(numeric_limits<streamsize>::max(), '\n');
 
 
