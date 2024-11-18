@@ -1,6 +1,7 @@
-enum class PokemonChoice {
+enum class PokemonChoice 
+{
 	CHARMANDER = 1,
 	BULBASAUR,
 	SQUIRTLE,
-	PIKACHU // Default choice
+	PIKACHU 
 };
