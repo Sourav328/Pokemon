@@ -1,11 +1,9 @@
-// Utility.cpp
 #include "Utility.hpp"
 #include <iostream>
 #include <limits>
 using namespace std;
 
-void Utility::clearConsole() 
-{
+void Utility::clearConsole() {
 #ifdef _WIN32
     system("cls");
 #else
@@ -13,12 +11,10 @@ void Utility::clearConsole()
 #endif
 }
 
-void Utility::waitForEnter() 
-{
+void Utility::waitForEnter() {
     cin.get();
 }
 
-void Utility::clearInputBuffer() 
-{
+void Utility::clearInputBuffer() {
     cin.ignore(numeric_limits<streamsize>::max(), '\n');
 }
