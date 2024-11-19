@@ -1,6 +1,7 @@
 #include <string>
-#include "PokemonType.hpp"
 using namespace std;
+
+enum class PokemonType;
 
 class Pokemon {
 public:
@@ -20,5 +21,5 @@ public:
     // Destructor
     ~Pokemon();
 
-    void attack() { cout << name << " attacks with a powerful move!\n"; };
+    void attack();
 };
