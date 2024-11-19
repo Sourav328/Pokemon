@@ -1,7 +1,7 @@
 #include "Pokemon.hpp"
 #include <iostream>
+#include "PokemonType.hpp"
 using namespace std;
-
 // Default constructor
 Pokemon::Pokemon() : name("Unknown"), type(PokemonType::NORMAL), health(50) {}
 
