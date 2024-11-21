@@ -27,6 +27,15 @@
     <ClCompile Include="Pokemon.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="WildEncounterManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Game.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ProfessorOak.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Utility.hpp">
@@ -44,7 +53,16 @@
     <ClInclude Include="Pokemon.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="grass.hpp">
+    <ClInclude Include="Grass.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WildEncounterManager.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Game.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ProfessorOak.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
