@@ -27,7 +27,8 @@ void Pokemon::attack()
 void Pokemon::takeDamage(int damage) 
 {
     health = damage; // Reduce HP by the damage amount
-    if (health < 0) {
+    if (health < 0) 
+    {
         health = 0; // Ensure HP doesn't go below 0
     }
 }
@@ -36,10 +37,24 @@ bool Pokemon::isFainted() const
 {
     return health <= 0; // Return true if HP is 0 or less
 }
+
 void Pokemon::attack (Pokemon& target) 
 {
     int damage = 10; // Fixed damage for simplicity
     cout << name << " attack " << target.name << " for " << damage << " damage!\\n";
     target.takeDamage(damage); // Apply damage to the target Pokémon
+}
+void Pokemon::heal() {
+    health = maxHealth; // Restore health to full
+}
+void Game::gameLoop(Player& player) {
+    ...
+	    case 2: {
+        cout << "You head to the PokeCenter.\\n";
+        player.chosenPokemon.heal(); // Heal the player's Pokémon
+        cout << player.chosenPokemon.name << "'s health is fully restored!\\n";
+        break;
+    }
+    ...
 }
 

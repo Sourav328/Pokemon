@@ -9,21 +9,24 @@ public:
     PokemonType type;
     int health;
     int maxHealth;
+    int attackPower;
 
 
-    // Default constructor
+    
     Pokemon();
 
-    // Parameterized constructor
-    Pokemon(string p_name, PokemonType p_type, int p_health);
-    void takeDamage(int damage); // Method to reduce HP
-    bool isFainted() const; // Method to check if the Pokemon has fainted
+    
+    Pokemon(std::string p_name, PokemonType p_type, int p_maxHealth, int p_attackPower) 
+        : name(p_name), type(p_type), maxHealth(p_maxHealth), health(p_maxHealth), attackPower(p_attackPower) {}
 
-    // Copy constructor
-    Pokemon(const Pokemon& other);
-
-    // Destructor
-    ~Pokemon();
+    void takeDamage(int damage); 
+    bool isFainted() const; 
+    void heal(); // Method to restore HP to max
+    void attack(Pokemon& target) {
+        int damage = attackPower; // Use attack power for damage calculation
+        std::cout << name << " attacks " << target.name << " for " << damage << " damage!\n";
+        target.takeDamage(damage);
+    }
     void attack();
 
 };
