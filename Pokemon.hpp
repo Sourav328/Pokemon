@@ -1,7 +1,6 @@
 #include <string>
-using namespace std;
-
 enum class PokemonType;
+using namespace std;
 
 class Pokemon {
 public:
@@ -10,23 +9,26 @@ public:
     int health;
     int maxHealth;
     int attackPower;
-
-
     
-    Pokemon();
+    Pokemon(string p_name, PokemonType p_type, int p_maxHealth, int p_attackPower)
+        : name(p_name), type(p_type), maxHealth(p_maxHealth), health(p_maxHealth), attackPower(p_attackPower) {
+    }
 
-    
-    Pokemon(std::string p_name, PokemonType p_type, int p_maxHealth, int p_attackPower) 
-        : name(p_name), type(p_type), maxHealth(p_maxHealth), health(p_maxHealth), attackPower(p_attackPower) {}
 
-    void takeDamage(int damage); 
-    bool isFainted() const; 
+    Pokemon(string p_name, PokemonType p_type, int p_maxHealth)
+        : name(p_name), type(p_type), maxHealth(p_maxHealth), health(p_maxHealth) {
+    }
+ 
+    void takeDamage(int damage);
+    bool isFainted() const;
     void heal(); // Method to restore HP to max
-    void attack(Pokemon& target) {
+
+    void attack(Pokemon& target) 
+    {
         int damage = attackPower; // Use attack power for damage calculation
-        std::cout << name << " attacks " << target.name << " for " << damage << " damage!\n";
+        cout << name << " attacks " << target.name << " for " << damage << " damage!\n";
         target.takeDamage(damage);
     }
-    void attack();
+    
 
 };
