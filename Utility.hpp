@@ -1,5 +1,4 @@
-class Utility 
-{
+class Utility {
 public:
     static void clearConsole();
     static void waitForEnter();
