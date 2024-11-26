@@ -3,8 +3,9 @@
 
 class Pokemon;
 
-struct Grass {
+struct Grass 
+{
     string environmentType;  
-    vector<Pokemon> wildPokemonList;  
+    vector<Pokemon>wildPokemonList;
     int encounterRate;  
 };
