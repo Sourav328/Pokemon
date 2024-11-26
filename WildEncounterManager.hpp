@@ -1,9 +1,12 @@
 #include <vector>
-struct Grass;
-class Pokemon;
+namespace N_Battle
+{
+    struct Grass;
+    class Pokemon;
 
-class WildEncounterManager {
-public:
-    WildEncounterManager();
-    Pokemon getRandomPokemonFromGrass(const Grass& grass);
-};
+    class WildEncounterManager {
+    public:
+        WildEncounterManager();
+        Pokemon getRandomPokemonFromGrass(const Grass& grass);
+    };
+}

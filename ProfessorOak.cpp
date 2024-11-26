@@ -3,6 +3,7 @@
 #include "Utility.hpp"
 #include <iostream>
 using namespace std;
+using namespace N_Character;
 
 ProfessorOak::ProfessorOak(string p_name) { name = p_name; }
 

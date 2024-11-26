@@ -7,6 +7,7 @@
 #include <iostream>
 #include <limits> // Include this header to use std::numeric_limits
 #include <string>
+using namespace N_Main;
 
 int main() {
 
