@@ -77,37 +77,37 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="BattleManager.hpp">
+    <ClInclude Include="BattleManager.h">
       <Filter>include\Battle</Filter>
     </ClInclude>
-    <ClInclude Include="BattleState.hpp">
+    <ClInclude Include="BattleState.h">
       <Filter>include\Battle</Filter>
     </ClInclude>
-    <ClInclude Include="WildEncounterManager.hpp">
+    <ClInclude Include="WildEncounterManager.h">
       <Filter>include\Battle</Filter>
     </ClInclude>
-    <ClInclude Include="Player.hpp">
+    <ClInclude Include="Player.h">
       <Filter>include\Character\Player</Filter>
     </ClInclude>
-    <ClInclude Include="ProfessorOak.hpp">
+    <ClInclude Include="ProfessorOak.h">
       <Filter>include\Character</Filter>
     </ClInclude>
-    <ClInclude Include="Game.hpp">
+    <ClInclude Include="Game.h">
       <Filter>include\Main</Filter>
     </ClInclude>
-    <ClInclude Include="Utility.hpp">
+    <ClInclude Include="Utility.h">
       <Filter>include\Utility</Filter>
     </ClInclude>
-    <ClInclude Include="Grass.hpp">
+    <ClInclude Include="Grass.h">
       <Filter>include\Pokemon</Filter>
     </ClInclude>
-    <ClInclude Include="Pokemon.hpp">
+    <ClInclude Include="Pokemon.h">
       <Filter>include\Pokemon</Filter>
     </ClInclude>
-    <ClInclude Include="PokemonChoice.hpp">
+    <ClInclude Include="PokemonChoice.h">
       <Filter>include\Pokemon</Filter>
     </ClInclude>
-    <ClInclude Include="PokemonType.hpp">
+    <ClInclude Include="PokemonType.h">
       <Filter>include\Pokemon</Filter>
     </ClInclude>
   </ItemGroup>
