@@ -1,56 +1,56 @@
-
-#include "BattleManager.hpp"
-#include "Player.hpp"
-#include "Utility.hpp"
+#include "BattleManager.h"
+#include "Player.h"
+#include "Utility.h"
 #include <iostream>
 using namespace std;
 namespace N_Battle
 {
-    void BattleManager::startBattle(Player& player, Pokemon& wildPokemon) {
-        battleState.playerPokemon = &player.chosenPokemon;
+
+    void BattleManager::StartBattle(N_Pokemon::Pokemon& chosenPokemon, N_Pokemon::Pokemon& wildPokemon) {
+        battleState.playerPokemon = &chosenPokemon;
         battleState.wildPokemon = &wildPokemon;
         battleState.playerTurn = true;
         battleState.battleOngoing = true;
 
         cout << "A wild " << battleState.wildPokemon->name << " appeared!\n";
-        battle();
+        Battle();
     }
 
-    void BattleManager::battle()
+    void BattleManager::Battle()
     {
         while (battleState.battleOngoing)
         {
             if (battleState.playerTurn)
             {
-                battleState.playerPokemon->attack(*battleState.wildPokemon);
+                battleState.playerPokemon->Attack(*battleState.wildPokemon);
             }
             else {
-                battleState.wildPokemon->attack(*battleState.playerPokemon);
+                battleState.wildPokemon->Attack(*battleState.playerPokemon);
             }
 
-            updateBattleState();
+            UpdateBattleState();
             battleState.playerTurn = !battleState.playerTurn;
-            Utility::waitForEnter();
+            N_Utility::Utility::WaitForEnter();
         }
 
-        handleBattleOutcome();
+        HandleBattleOutcome();
     }
 
-    void BattleManager::updateBattleState()
+    void BattleManager::UpdateBattleState()
     {
-        if (battleState.playerPokemon->isFainted())
+        if (battleState.playerPokemon->IsFainted())
         {
             battleState.battleOngoing = false;
         }
-        else if (battleState.wildPokemon->isFainted())
+        else if (battleState.wildPokemon->IsFainted())
         {
             battleState.battleOngoing = false;
         }
     }
 
-    void BattleManager::handleBattleOutcome()
+    void BattleManager::HandleBattleOutcome()
     {
-        if (battleState.playerPokemon->isFainted())
+        if (battleState.playerPokemon->IsFainted())
         {
             cout << battleState.playerPokemon->name
                 << " Has fainted! You lose the battle.\n";
