@@ -19,4 +19,6 @@ namespace N_Pokemon
         void TakeDamage(int damage);
         bool IsFainted() const;
         void Heal();
-
+        void Attack(Pokemon& target) const;
+    };
+}
