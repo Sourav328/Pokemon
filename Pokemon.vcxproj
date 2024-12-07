@@ -128,8 +128,8 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Game.cpp" />
-    <ClCompile Include="Player.cpp" />
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Player.cpp" />
     <ClCompile Include="Pokemon.cpp" />
     <ClCompile Include="ProfessorOak.cpp" />
     <ClCompile Include="Utility.cpp" />
@@ -137,17 +137,17 @@
     <ClCompile Include="‎BattleManager.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="BattleManager.hpp" />
-    <ClInclude Include="BattleState.hpp" />
-    <ClInclude Include="Game.hpp" />
-    <ClInclude Include="Grass.hpp" />
-    <ClInclude Include="Player.hpp" />
-    <ClInclude Include="Pokemon.hpp" />
-    <ClInclude Include="PokemonChoice.hpp" />
-    <ClInclude Include="PokemonType.hpp" />
-    <ClInclude Include="ProfessorOak.hpp" />
-    <ClInclude Include="Utility.hpp" />
-    <ClInclude Include="WildEncounterManager.hpp" />
+    <ClInclude Include="BattleManager.h" />
+    <ClInclude Include="BattleState.h" />
+    <ClInclude Include="Game.h" />
+    <ClInclude Include="Grass.h" />
+    <ClInclude Include="Player.h" />
+    <ClInclude Include="Pokemon.h" />
+    <ClInclude Include="PokemonChoice.h" />
+    <ClInclude Include="PokemonType.h" />
+    <ClInclude Include="ProfessorOak.h" />
+    <ClInclude Include="Utility.h" />
+    <ClInclude Include="WildEncounterManager.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
