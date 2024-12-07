@@ -19,4 +19,4 @@ namespace N_Character
 		void OfferPokemonChoices(N_Player::Player& player) const;
 		void ExplainMainQuest(N_Player::Player& player);
 	};
-}
+
