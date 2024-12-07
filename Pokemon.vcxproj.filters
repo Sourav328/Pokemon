@@ -49,6 +49,12 @@
     <Filter Include="src\Pokemon">
       <UniqueIdentifier>{320bd77f-a2df-40c2-9498-4b0f2b270de6}</UniqueIdentifier>
     </Filter>
+    <Filter Include="include\Pokemon\Pokemon%27s">
+      <UniqueIdentifier>{6066bd3e-5bc2-4500-b04f-7d59b4df20cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Pokemon\Pokemon%27s">
+      <UniqueIdentifier>{bc642294-3a0b-4f99-b975-19c52f25b699}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Game.cpp">
@@ -73,6 +79,18 @@
       <Filter>src\Utility</Filter>
     </ClCompile>
     <ClCompile Include="Main.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="Pikachu.cpp">
+      <Filter>src\Pokemon\Pokemon%27s</Filter>
+    </ClCompile>
+    <ClCompile Include="Pidgey.cpp">
+      <Filter>src\Pokemon\Pokemon%27s</Filter>
+    </ClCompile>
+    <ClCompile Include="Caterpie.cpp">
+      <Filter>src\Pokemon\Pokemon%27s</Filter>
+    </ClCompile>
+    <ClCompile Include="Zubat.cpp">
       <Filter>src</Filter>
     </ClCompile>
   </ItemGroup>
@@ -109,6 +127,18 @@
     </ClInclude>
     <ClInclude Include="Utility.h">
       <Filter>include\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Pikachu.h">
+      <Filter>include\Pokemon\Pokemon%27s</Filter>
+    </ClInclude>
+    <ClInclude Include="Pidgey.h">
+      <Filter>include\Pokemon\Pokemon%27s</Filter>
+    </ClInclude>
+    <ClInclude Include="Caterpie.h">
+      <Filter>include\Pokemon\Pokemon%27s</Filter>
+    </ClInclude>
+    <ClInclude Include="Zubat.h">
+      <Filter>include</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

@@ -127,20 +127,27 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Caterpie.cpp" />
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Pidgey.cpp" />
+    <ClCompile Include="Pikachu.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="Pokemon.cpp" />
     <ClCompile Include="ProfessorOak.cpp" />
     <ClCompile Include="Utility.cpp" />
     <ClCompile Include="WildEncounterManager.cpp" />
+    <ClCompile Include="Zubat.cpp" />
     <ClCompile Include="‎BattleManager.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BattleManager.h" />
     <ClInclude Include="BattleState.h" />
+    <ClInclude Include="Caterpie.h" />
     <ClInclude Include="Game.h" />
     <ClInclude Include="Grass.h" />
+    <ClInclude Include="Pidgey.h" />
+    <ClInclude Include="Pikachu.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="Pokemon.h" />
     <ClInclude Include="PokemonChoice.h" />
@@ -148,6 +155,7 @@
     <ClInclude Include="ProfessorOak.h" />
     <ClInclude Include="Utility.h" />
     <ClInclude Include="WildEncounterManager.h" />
+    <ClInclude Include="Zubat.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
