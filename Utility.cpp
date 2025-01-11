@@ -12,7 +12,7 @@ namespace N_Utility
     }
 
     void Utility::WaitForEnter() {
-        std::cout << "Press Enter to continue...";
+        std::cout << "Press Enter...";
         std::cin.get(); // Wait for Enter key
     }
 

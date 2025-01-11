@@ -14,21 +14,25 @@ using namespace N_Player;
 namespace N_Main
 {
 
-    Game::Game() {
-        forestGrass = {
+    Game::Game() 
+    {
+        forestGrass = 
+        {
             N_Pokemon::Pokemon("Pidgey", PokemonType::NORMAL, 40, 7),
             N_Pokemon::Pokemon("Caterpie", PokemonType::BUG, 35, 5),
             N_Pokemon::Pokemon("Zubat", PokemonType::POISON, 30, 8)
         };
     }
 
-    void Game::GameLoop(N_Player::Player& player) {
+    void Game::GameLoop(N_Player::Player& player) 
+    {
         int choice;
         bool keepPlaying = true;
 
-        while (keepPlaying) {
+        while (keepPlaying) 
+        {
             Utility::ClearConsole();
-            std::cout << "\nWhat would you like to do next, " << player.name << "?\n";
+            std::cout << "\n What would you like to do next, " << player.name << "?\n";
             std::cout << "1. Explore the Forest\n";
             std::cout << "2. Visit PokeCenter\n";
             std::cout << "3. Quit\n";
@@ -57,7 +61,8 @@ namespace N_Main
         std::cout << "Goodbye, " << player.name << "! Thanks for playing!\n";
     }
 
-    void Game::VisitPokeCenter(N_Player::Player player) {
+    void Game::VisitPokeCenter(N_Player::Player player) 
+    {
         std::cout << "Healing " << player.chosenPokemon.name << "...\n";
         player.chosenPokemon.Heal();
         std::cout << player.chosenPokemon.name << " is fully healed!\n";

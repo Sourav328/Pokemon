@@ -91,7 +91,7 @@
       <Filter>src\Pokemon\Pokemon%27s</Filter>
     </ClCompile>
     <ClCompile Include="Zubat.cpp">
-      <Filter>src</Filter>
+      <Filter>src\Pokemon\Pokemon%27s</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -138,7 +138,7 @@
       <Filter>include\Pokemon\Pokemon%27s</Filter>
     </ClInclude>
     <ClInclude Include="Zubat.h">
-      <Filter>include</Filter>
+      <Filter>include\Pokemon\Pokemon%27s</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
