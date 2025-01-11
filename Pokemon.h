@@ -1,19 +1,21 @@
 #pragma once
 #include <string>
 #include "PokemonType.h"
+using namespace std;
 
 namespace N_Pokemon
 {
-    class Pokemon {
+    class Pokemon 
+    {
     public:
-        std::string name;
+        string name;
         PokemonType type;
-        int health;
+        int health=50;
         int maxHealth;
         int attackPower;
 
         Pokemon();
-        Pokemon(std::string p_name, PokemonType p_type, int p_health, int p_attackPower);
+        Pokemon(string p_name, PokemonType p_type, int p_health, int p_attackPower);
         Pokemon(const Pokemon& other);
 
         void TakeDamage(int damage);
