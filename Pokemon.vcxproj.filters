@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <Filter Include="Resource Files">
@@ -95,9 +95,7 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Game.h">
-      <Filter>include\Main</Filter>
-    </ClInclude>
+
     <ClInclude Include="BattleManager.h">
       <Filter>include\Battle</Filter>
     </ClInclude>
@@ -113,6 +111,7 @@
     <ClInclude Include="ProfessorOak.h">
       <Filter>include\Character</Filter>
     </ClInclude>
+
     <ClInclude Include="Grass.h">
       <Filter>include\Pokemon</Filter>
     </ClInclude>
