@@ -16,7 +16,7 @@ namespace N_Battle
         Battle();
     }
 
-    void BattleManager::Battle()
+    void BattleManager:: Battle()
     {
         while (battleState.battleOngoing)
         {
@@ -36,7 +36,7 @@ namespace N_Battle
         HandleBattleOutcome();
     }
 
-    void BattleManager::UpdateBattleState()
+    void BattleManager :: UpdateBattleState()
     {
         if (battleState.playerPokemon->IsFainted())
         {
