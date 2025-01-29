@@ -5,7 +5,7 @@
 #include "ProfessorOak.h"
 #include "Utility.h"
 #include <iostream>
-#include <limits> // Include this header to use std::numeric_limits
+#include <limits> 
 #include <string>
 
 using namespace N_Character;
@@ -18,15 +18,15 @@ int main() {
     N_Player::Player* player = new N_Player::Player();
 
     // Greet the player and offer Pokemon choices
-    professor->greetPlayer(player);
-    professor->PokemonChoices(player);
+    professor -> greetPlayer (player);
+    professor -> PokemonChoices (player);
 
     // Explain the main quest
-    professor->explainMainQuest(player);
+    professor-> explainMainQuest (player);
 
     // Start the main game loop
     N_Main::Game* game = new N_Main::Game();
-    game->gameLoop(player);
+    game-> gameLoop (player);
 
     delete(professor);
     delete(player);
