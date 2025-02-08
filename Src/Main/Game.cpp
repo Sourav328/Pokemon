@@ -1,11 +1,11 @@
-﻿#include "Game.h"
-#include "Utility.h"
-#include <iostream>
-#include "BattleManager.h"
-#include "ProfessorOak.h"
-#include "PokemonType.h"
-#include "Pokemon.h"
-#include "Player.h"
+﻿#include <iostream>
+#include "../../Include/Main/Game.h"
+#include "../../Include/Utility/Utility.h"
+#include "../../Include/Battle/BattleManager.h"
+#include "../../Include/Character/ProfessorOak.h"
+#include "../../Include/Pokemon/PokemonType.h"
+#include "../../Include/Pokemon/Pokemon.h"
+#include "../../Include/Character/Player/Player.h"
 
 using namespace N_Utility;
 using namespace N_Pokemon;
@@ -64,7 +64,7 @@ namespace N_Main
     void Game::VisitPokeCenter(N_Player::Player player) 
     {
         std::cout << "Healing " << player.chosenPokemon.name << "...\n";
-        player.chosenPokemon.Heal();
+        player.chosenPokemon.heal();
         std::cout << player.chosenPokemon.name << " is fully healed!\n";
     }
 }

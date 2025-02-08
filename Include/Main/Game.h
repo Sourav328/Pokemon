@@ -1,8 +1,8 @@
 #pragma once
 
 #include <vector>
-#include "Pokemon.h"
-#include "Player.h"
+#include "../../Include/Pokemon/Pokemon.h"
+#include "../../Character/Player/Player.h"
 
 namespace N_Main
 {

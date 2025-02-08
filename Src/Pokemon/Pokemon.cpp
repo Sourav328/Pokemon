@@ -1,4 +1,4 @@
-#include "Pokemon.h"
+#include "../../Include/Pokemon/Pokemon.h"
 #include <iostream>
 using namespace std;
 
@@ -21,9 +21,10 @@ namespace N_Pokemon
 
     bool Pokemon::IsFainted() const { return health <= 0; }
 
-    void Pokemon::Heal() { health = maxHealth; }
+    void Pokemon::heal() { health = maxHealth; }
 
-    void Pokemon::Attack(Pokemon& target) const {
+    void Pokemon::attack(Pokemon& target) const 
+    {
         cout << name << " attacks " << target.name << " for " << attackPower << " damage!\n";
         target.TakeDamage(attackPower);
     }

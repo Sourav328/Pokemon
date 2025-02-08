@@ -1,7 +1,7 @@
-#include "Player.h"
-#include "Utility.h"
+#include "../../Include/Character/Player/Player.h"
+#include "../../Include/Utility/Utility.h"
+#include "../../Include/Pokemon/PokemonChoice.h"
 #include <iostream>
-#include "PokemonChoice.h"
 using namespace N_Pokemon;
 
 using namespace N_Utility;

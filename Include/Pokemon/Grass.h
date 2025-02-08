@@ -1,6 +1,6 @@
 #pragma once
 #include <vector>
-#include "Pokemon.h"
+#include "../../Include/Pokemon/Pokemon.h"
 namespace N_Pokemon
 {
 	class Pokemon;

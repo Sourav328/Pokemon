@@ -1,12 +1,13 @@
-#include "BattleManager.h"
-#include "Player.h"
-#include "Utility.h"
+#include "../../Include/Battle/BattleManager.h"
+#include "../../Include/Character/Player/Player.h"
+#include "../../Include/Utility/Utility.h"
 #include <iostream>
 using namespace std;
 namespace N_Battle
 {
-
-    void BattleManager::StartBattle(N_Pokemon::Pokemon& chosenPokemon, N_Pokemon::Pokemon& wildPokemon) {
+   
+    void BattleManager::StartBattle(N_Pokemon::Pokemon& chosenPokemon, N_Pokemon::Pokemon& wildPokemon)
+    {
         battleState.playerPokemon = &chosenPokemon;
         battleState.wildPokemon = &wildPokemon;
         battleState.playerTurn = true;

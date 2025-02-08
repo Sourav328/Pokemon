@@ -1,5 +1,6 @@
-#include "Player.h"
-#include "ProfessorOak.h"
+#include "../../Include/Character/Player/Player.h"
+#include "../../Include/Character/ProfessorOak.h"
+
 
 using namespace N_Utility;
 

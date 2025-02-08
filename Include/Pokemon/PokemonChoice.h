@@ -2,5 +2,5 @@
 
 namespace N_Pokemon
 {
-	enum class PokemonChoice { CHARMANDER = 1, BULBASAUR, SQUIRTLE, PIKACHU };
+	enum class PokemonChoice { CHARMANDER = 1, BULBASAUR, SQUIRTLE, PIKACHU, BULBASAUR, CATERPIE, PIDGEY, ZUBAT };
 }

@@ -1,5 +1,6 @@
 #pragma once
-#include "Pokemon.h"
+#include "../../Include/Pokemon/Pokemon.h"
+#include <iostream>
 
 namespace N_Battle
 {
