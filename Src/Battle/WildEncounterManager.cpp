@@ -1,5 +1,5 @@
-#include "WildEncounterManager.h"
 
+#include "../../Include/Battle/WildEncounterManager.h"
 #include <cstdlib> 
 #include <ctime>  
 namespace N_Battle

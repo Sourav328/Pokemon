@@ -1,6 +1,6 @@
 #pragma once
+#include "../../Include/Pokemon/Grass.h"
 #include <string>
-#include "Grass.h"
 //using namespace std;
 namespace N_Player
 {

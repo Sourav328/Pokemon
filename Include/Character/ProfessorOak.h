@@ -1,6 +1,6 @@
 #pragma once
+#include "../../Include/Character/Player/Player.h"
 #include <iostream>
-#include "Player.h"
 using namespace std;
 
 
@@ -10,7 +10,8 @@ namespace N_Character
 {
 	class Player;
 
-	class ProfessorOak {
+	class ProfessorOak 
+	{
 	public:
 		string name;
 
@@ -19,4 +20,4 @@ namespace N_Character
 		void OfferPokemonChoices(N_Player::Player& player) const;
 		void ExplainMainQuest(N_Player::Player& player);
 	};
-
+}
